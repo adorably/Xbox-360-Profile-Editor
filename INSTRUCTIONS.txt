@@ -1,0 +1,26 @@
+Xbox 360 Profile Editor Setup and Usage
+
+-- Setup --
+Python3.10 - Python3.13 Needed
+
+    - Install from Microsoft Store or python website.
+    
+    - Open Command Prompt and navigate to the folder of the tool. 
+        The easiest way to navigate here is by opening the folder of the tool and typing 'cmd' into the path director of the explorer and pressing enter.
+    
+    - Install HTTPX requirement by running the command 'pip install httpx'
+
+
+-- Usage --
+    1.) Run the tool with the command 'python3.10 main.py'
+    2.) Once the tool is open, head to 'https://social.xbox.com' and sign in.
+    3.) Once signed into your account, press CTRL + SHIFT + I to open the developer console of your browser.
+    4.) Next, select the 'Network' tab of the developer console, and REFRESH the page.
+    5.) Once the requests load in, filter the requests by 'xboxlive.com' or simply look for a link containing 'settings?Settings='
+    6.) Click the link, and head to the Authorization header. Copy the value starting from XBL3.0 all the way until the end of the blob.
+    7.) Paste the value (token) into the XBL3.0 parameter of the tool.
+    8.) In order to set an Xbox 360 GamerPicture, you can either head to 'https://xboxgamer.pics/' to find your gamerpicture, or copy the link of a Gamerpicture from a profile by using Nini.
+    9.) If you chose to use the website for Gamerpictures, simply right click on the picture and copy the image link.
+    10.) Now paste your Gamerpicture link into the Gamerpicture URL parameter and tick the checkbox.
+    11.) If you want to set any other data, simply enter the content you want to set, and tick the checkbox beside it. If you are not wanting to edit something, then untick it.
+    12.) Once you have your preferred data filled out, simply press 'Set Values'.
